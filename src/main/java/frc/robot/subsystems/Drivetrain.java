@@ -42,8 +42,8 @@ public class Drivetrain extends SubsystemBase {
   }
 
   public void drive(double speed, double turn){
-    double left = (speed + turn) * 0.5;
-    double right = (speed - turn) * 0.5;
+    double left = (speed + turn) * 0.3;
+    double right = (speed - turn) * 0.3;
 
     leftFront.set(left);
     rightFront.set(-right);
